@@ -1,3 +1,4 @@
-selenium==3.13.0
-requests==2.19.1
+pymongo==3.7.2
 pytz
+requests==2.19.1
+selenium==3.13.0
