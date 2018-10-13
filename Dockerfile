@@ -7,10 +7,10 @@ RUN echo "http://dl-4.alpinelinux.org/alpine/v3.7/main" >> /etc/apk/repositories
     echo "http://dl-4.alpinelinux.org/alpine/v3.7/community" >> /etc/apk/repositories
 
 # 配置默认放置 App 的目录
-RUN mkdir -p /app
-WORKDIR /app
+RUN mkdir -p /app/selenium
+WORKDIR /app/selenium
 
-COPY requirements.txt /app
+COPY requirements.txt /app/selenium
 RUN pip install -r requirements.txt
 
 EXPOSE 8888
